@@ -29,7 +29,7 @@ O público-alvo escolhido foi criança de 6 anos. Por isso, o jogo tem botões g
 5. Curva de dificuldade: o alvo muda de lugar a cada 1,3 segundo, deixando o jogo mais rápido sem ficar impossível.
 6. Condição de término: o jogo termina quando o tempo chega a zero ou quando o jogador perde as 3 vidas.
 
-## Seu diferencial
+## Diferencial
 
 Meu diferencial foi o alvo bônus. Ele aparece algumas vezes no lugar do alvo comum e vale mais pontos.
 
