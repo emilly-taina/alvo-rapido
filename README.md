@@ -8,7 +8,7 @@ Escolhi a mecânica Acerte a Toupeira. No meu tema, a toupeira foi substituída 
 
 ## Briefing do cliente
 
-O público-alvo escolhido foi crianças de 6 anos. Por isso, o jogo tem botões grandes, partida curta, textos simples e regras fáceis de entender.
+O público-alvo escolhido foi criança de 6 anos. Por isso, o jogo tem botões grandes, partida curta, textos simples e regras fáceis de entender.
 
 ## Regras do jogo
 
