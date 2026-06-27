@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="titulo">
+  <title id="titulo">Alvo comum</title>
+  <circle cx="60" cy="60" r="50" fill="#ffffff" stroke="#172033" stroke-width="8"/>
+  <circle cx="60" cy="60" r="34" fill="#c0392b"/>
+  <circle cx="60" cy="60" r="17" fill="#ffffff"/>
+  <circle cx="60" cy="60" r="8" fill="#1f4e79"/>
+</svg>

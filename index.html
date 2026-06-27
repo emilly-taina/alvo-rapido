@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvo Rápido</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="pagina">
+    <section class="topo">
+      <div>
+        <p class="etiqueta">Atividade 09</p>
+        <h1>Alvo Rápido</h1>
+        <p class="descricao">Clique no alvo que aparece na grade antes que o tempo acabe.</p>
+      </div>
+
+      <form id="form-jogador" class="entrada">
+        <label for="nome-jogador">Nome do jogador</label>
+        <div class="linha-form">
+          <input id="nome-jogador" type="text" maxlength="24" placeholder="Digite seu nome">
+          <button type="submit">Jogar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="painel" aria-label="Placar">
+      <div>
+        <span>Pontos</span>
+        <strong id="pontuacao">0</strong>
+      </div>
+      <div>
+        <span>Tempo</span>
+        <strong id="tempo">40</strong>
+      </div>
+      <div>
+        <span>Acertos</span>
+        <strong id="acertos">0</strong>
+      </div>
+      <div>
+        <span>Vidas</span>
+        <strong id="vidas">3</strong>
+      </div>
+    </section>
+
+    <section class="jogo">
+      <div class="barra-jogo">
+        <p id="mensagem">Digite seu nome e aperte Jogar.</p>
+      </div>
+      <div id="grade" class="grade" aria-label="Grade do jogo"></div>
+    </section>
+
+    <section id="resultado" class="resultado" hidden>
+      <div class="caixa-resultado">
+        <p class="etiqueta">Fim de jogo</p>
+        <h2 id="titulo-resultado">Resultado</h2>
+        <p id="texto-resultado"></p>
+        <button id="botao-reiniciar" type="button">Jogar novamente</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

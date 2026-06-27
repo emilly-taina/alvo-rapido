@@ -1,0 +1,252 @@
+:root {
+  --fundo: #f7f0df;
+  --texto: #172033;
+  --texto-fraco: #566071;
+  --cartao: #fffaf0;
+  --linha: #d4c8b0;
+  --azul: #1f4e79;
+  --verde: #27825f;
+  --vermelho: #c0392b;
+  --amarelo: #f2b705;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 8px;
+  padding: 0 18px;
+  background: var(--azul);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled),
+button:focus-visible:not(:disabled) {
+  background: #163c5d;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pagina {
+  width: min(980px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.topo {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+
+.etiqueta {
+  margin: 0 0 8px;
+  color: var(--verde);
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.descricao {
+  max-width: 580px;
+  margin-bottom: 0;
+  color: var(--texto-fraco);
+  font-size: 1.1rem;
+}
+
+.entrada,
+.jogo,
+.painel div {
+  border: 2px solid var(--linha);
+  border-radius: 8px;
+  background: var(--cartao);
+}
+
+.entrada {
+  padding: 16px;
+}
+
+.entrada label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.linha-form {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  gap: 10px;
+}
+
+input {
+  min-height: 44px;
+  width: 100%;
+  border: 2px solid var(--linha);
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+.painel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.painel div {
+  min-height: 76px;
+  padding: 12px;
+}
+
+.painel span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--texto-fraco);
+  font-weight: 700;
+}
+
+.painel strong {
+  font-size: 1.8rem;
+}
+
+.barra-jogo {
+  padding: 16px;
+  border-bottom: 2px solid var(--linha);
+}
+
+.barra-jogo p {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 16px;
+}
+
+.buraco {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border: 3px solid #22314d;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.buraco:hover:not(:disabled),
+.buraco:focus-visible:not(:disabled) {
+  background: #fff4c4;
+}
+
+.buraco img {
+  width: 72%;
+  max-width: 96px;
+  height: auto;
+  pointer-events: none;
+}
+
+.buraco.vazio::after {
+  content: "";
+  width: 42%;
+  height: 42%;
+  border-radius: 50%;
+  background: #d9d1c2;
+}
+
+.buraco.acerto {
+  border-color: var(--verde);
+  background: #dff4e9;
+}
+
+.buraco.erro {
+  border-color: var(--vermelho);
+  background: #fde1dc;
+}
+
+.resultado {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(23, 32, 51, 0.65);
+}
+
+.resultado[hidden] {
+  display: none;
+}
+
+.caixa-resultado {
+  width: min(430px, 100%);
+  padding: 24px;
+  border-radius: 8px;
+  background: white;
+}
+
+.caixa-resultado h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.caixa-resultado button {
+  width: 100%;
+  margin-top: 8px;
+}
+
+@media (max-width: 720px) {
+  .topo,
+  .painel {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .linha-form {
+    grid-template-columns: 1fr;
+  }
+
+  .grade {
+    gap: 8px;
+    padding: 10px;
+  }
+}
